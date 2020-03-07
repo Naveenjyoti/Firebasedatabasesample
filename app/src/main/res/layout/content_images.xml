@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    tools:ignore="MissingConstraints"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center|top"
+            tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dip"
+            android:gravity="top|center"
+            android:layout_marginTop="20dip">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/blank_user"
+                android:layout_marginTop="60dp"
+                android:id="@+id/img_user"
+                android:layout_height="120dp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/usernameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:gravity="left|top"
+                android:maxLines="10"
+                android:padding="10dip"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:hint="Enter about me"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="2dip"
+                android:gravity="top|center"
+                android:layout_marginTop="20dip">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="2dip"
+                    android:gravity="top|center"
+                    android:layout_marginTop="20dip">
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/plus"
+                        android:layout_marginTop="0dp"
+                        android:id="@+id/img_user2"
+                        android:layout_weight="1"
+                        android:layout_height="150dp" />
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/plus"
+                        android:layout_marginTop="0dp"
+                        android:id="@+id/img_user3"
+                        android:layout_weight="1"
+                        android:layout_height="150dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="2dip"
+                    android:gravity="top|center"
+                    android:layout_marginTop="20dip">
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/plus"
+                        android:layout_marginTop="0dp"
+                        android:id="@+id/img_user4"
+                        android:layout_weight="1"
+                        android:layout_height="150dp" />
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/plus"
+                        android:layout_marginTop="0dp"
+                        android:id="@+id/img_user5"
+                        android:layout_weight="1"
+                        android:layout_height="150dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+            <Button
+                android:id="@+id/button"
+                android:layout_width="200dip"
+                android:layout_height="40dip"
+                android:layout_margin="20dp"
+                android:textSize="20dip"
+                android:background="@color/colorAccent"
+                android:text="Save and continue"
+                style="@style/Widget.MaterialComponents.Button"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </ScrollView>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="150dp"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/l1"
+           android:gravity="left"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/a"
+                android:gravity="center"
+                android:src="@drawable/cam"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camera"
+                android:id="@+id/text_dialog"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#ff000000"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l2"
+            android:gravity="left"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/a1"
+                android:gravity="center"
+                android:src="@drawable/gal"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gallery"
+                android:id="@+id/text_dialog1"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#ff000000"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l3"
+            android:gravity="left"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/itext_action1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_clear_black_18dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:id="@+id/text_dialog2"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#ff000000"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
